@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="application/json" src="hurdlers.json"></script>
+    <script type="text/javascript" src="logic.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="hurdles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="menu">
+        <div class="menucontent">
+            <img src="img/k.png" alt="Icon">
+            <h3> This is my game harrison??</h3>
+			<p> thank you janet mam for giving oppurtunities <br> happy world sports dayy </p>
+            <input id="name" type="text" name="name" value="no game no namees"><br>
+            <button onclick="onStart()">Start</button>
+        </div>
+    </div>
+    <canvas id="background" width="1280" height="720"></canvas>
+    <canvas id="layer1" width="1280" height="720"></canvas>
+    <div id="bar"></div>
+    <div id="results">
+        <div id="header">Results</div>
+        <table id="resultTable">
+        </table>
+        <button onclick="reload()">Restart</button>
+        <button onclick="submitScore()">Submit</button>
+    </div>
+</body>
+</html>
